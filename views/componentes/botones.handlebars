@@ -1,0 +1,6 @@
+{{!-- plantilla de botones.handlebars para mostrar los botones de colores con clases de Bootstrap, donde colores es un array recibido como parametro desde el metodo render del index.js, importante esta vista estamos concantenando cada color para usar una btn-color class de bootstrap dinamica, asi como la ruta href sera dinamica tambien, dependiendo de cada color  --}}
+
+{{#each colores}}
+    <a href="/{{this}}"> <button class="btn btn-{{this}}">{{this}}</button>
+    </a>
+{{/each}}

@@ -1,0 +1,30 @@
+{{!-- contenido de la plantilla inicio.handlebars --}}
+
+{{!-- aqui importamos bootstrap que debe ser instalado con npm i bootstrap --}}
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+{{!-- en esta parte mostramos informacion con clases Bootstrap e importamos los partials botones y spinner --}}
+<div class="contain d-flex flex-column text-center
+justify-content-center align-items-center">
+    <h1>Ingresa como parámetro en la URL cualquiera de estas opciones</h1>
+    <h2>O haz clic en los botones</h2>
+    <span>Ejemplo: /info</span>
+    <div class="m-5">
+        {{> botones }}
+    </div>
+    <div>
+        {{> spinner}}
+    </div>
+</div>
+
+{{!-- definimos los estilos css a aplicar  --}}
+<style>
+    * {
+        margin: 0;
+    }
+
+    .contain {
+        background: #ece9e9;
+        height: 100vh;
+    }
+</style>
